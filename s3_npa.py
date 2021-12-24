@@ -56,7 +56,7 @@ def get_s3_pa():
     session = aws.Session(region_name=region)
     s3client = aws.client('s3')
     bucket_name = input(f'Which bucket would you like info on ? -- **** IT MUST BE AN EXACT MATCH, SUGGEST COPY & PASTE ***:  ')
-    gpa = s3client.get_public_access_block(Bucket=bucket_name, ExpectedBucketOwner='588342600416')
+    gpa = s3client.get_public_access_block(Bucket=bucket_name, ExpectedBucketOwner='<AWS ACCOUNT#>')
         #print(f"The bucket name is: {bucket['Name']}, bucket creationdate is: {bucket['CreationDate']}")
     print(f'\nThe public access policy info for {bucket_name} \n')    
     pprint.pprint(gpa['PublicAccessBlockConfiguration'])
