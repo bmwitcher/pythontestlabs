@@ -111,7 +111,7 @@ aws_iam.create_user_accesskeys(userid)
 # encrypt the creds.txt
 aws_iam.encrypt(file, key)
 
-# uncomment below after first run to descrypt the creds.txt
+# uncomment below after first run to decrypt the creds.txt
 #aws_iam.decrypt(file,key)
 
 # Bryant Witcher - December 26, 2021
